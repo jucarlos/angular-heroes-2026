@@ -8,13 +8,17 @@ import { Component } from '@angular/core';
 })
 export class Heroes {
 
-  public heroesNames: string[] =  ['Spiderman', 'IronMan', 'Hulk', 'Thor'];
+  public heroesNames: string[] =
+  ['Spiderman', 'IronMan', 'Hulk', 'Thor'];
+
+  public deleteHeroe?: string ;
 
 
 
   removeLastHeroe() {
 
     // método para borrar el último elemento de la lista.
+    this.deleteHeroe = this.heroesNames.pop();
 
     console.log('Estoy en el método para borrar');
 

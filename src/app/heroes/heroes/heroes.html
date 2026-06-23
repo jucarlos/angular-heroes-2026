@@ -4,8 +4,12 @@
 
 
 
+<div *ngIf="deleteHeroe">
+  <h3>
+    Heroe borrado: {{ deleteHeroe }}
+  </h3>
+</div>
 
-<h3>Héroe borrado: --poner el nombre del elemento borrado</h3>
 
 
 
@@ -17,7 +21,11 @@
     class="mt-2 mb-2 btn btn-outline-danger">Borrar último héroe</button>
 
 
-<h3>No hay datos para mostrar</h3>
+<div
+  *ngIf="heroesNames.length === 0"
+  class="alert alert-primary" role="alert">
+  No hay datos para mostrar
+</div>
 
 
 <ul class="mt-2 list-group">

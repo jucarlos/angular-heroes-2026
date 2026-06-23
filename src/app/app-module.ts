@@ -16,6 +16,7 @@ import { HeroesModule } from './heroes/heroes-module';
     BrowserModule,
     AppRoutingModule,
     HeroesModule,
+
   ],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],
