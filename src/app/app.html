@@ -1,11 +1,21 @@
+
+
 <h1>{{ title }}</h1>
-
-<!-- <hr>
-<app-counter></app-counter> -->
-
-<!-- <hr>
-<app-heroe></app-heroe> -->
-
 <hr>
-<app-heroes></app-heroes>
+
+<div class="row mt-2">
+
+  <div class="col-12 col-sm-4">
+    <app-sidemenu></app-sidemenu>
+  </div>
+
+  <div class="col">
+
+    <router-outlet></router-outlet>
+  </div>
+
+</div>
+
+
+
 

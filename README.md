@@ -28,13 +28,21 @@ hay que fijarse en este punto que el componente sidemenu está en el módulo sha
 
 Hay que importar desde el módulo app.module el módulo shared.
 
-En el html y ts del componente sidemenu, hacemos el menu
+En app.html vamos a hacer referencia al sidemenu
 
 
 Para navegar entre las páginas.
-Hay que activar RouterLink ( mecanismo de angular para la navegacion) , RouterLinkActive ( mecanismo de angular para controlar la página activa) 
+Hay que activar RouterLink ( mecanismo de angular para la navegacion) , RouterLinkActive ( mecanismo de angular para controlar la página activa) .
+Vemos con loadChildren el LazyLoad.
 
-por último actualizar el fichero de rutas principal y subrutas en caso de que haga falta.
+
+
+En el html y ts del componente sidemenu, hacemos el menu
+
+
+
+
+por último actualizar el fichero de rutas principal y subrutas en caso de que haga falta que si que lo hemos hecho.
 
 
 

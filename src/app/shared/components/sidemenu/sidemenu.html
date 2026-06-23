@@ -1,0 +1,26 @@
+
+
+<h3>Opciones</h3>
+
+<ul class="list-group mt-3">
+
+
+  @for(opcion of menuApp; track $index) {
+
+      <li class="list-group-item"
+
+          [routerLink]="opcion.route"
+          routerLinkActive="active"
+
+          >{{ opcion.title }}
+      </li>
+
+
+  }
+
+
+
+
+
+
+</ul>

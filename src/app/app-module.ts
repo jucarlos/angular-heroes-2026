@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { Counter } from './counter/counter';
 import { HeroesModule } from './heroes/heroes-module';
+import { SharedModule } from './shared/shared-module';
 
 
 @NgModule({
@@ -16,7 +17,7 @@ import { HeroesModule } from './heroes/heroes-module';
     BrowserModule,
     AppRoutingModule,
     HeroesModule,
-
+    SharedModule,
   ],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],

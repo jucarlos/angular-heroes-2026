@@ -1,10 +1,29 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HeroesModule } from './heroes-module';
+
+import { Heroes } from './heroes/heroes';
+import { Heroe } from './heroe/heroe';
 
 const routes: Routes = [
 
+  {
+    path: '',
+    children: [
+      {
+        path: 'heroes',
+        component: Heroes,
 
+      },
+      {
+        path: 'heroe',
+        component: Heroe
+      },
+      {
+        path: '**',
+        redirectTo: 'heroe',
+      }
+    ]
+  }
 
 
 ];
